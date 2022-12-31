@@ -11,12 +11,13 @@
 body {
   display: flex;
   flex-direction: column;
+  padding: 30px;
   align-items: center;
   width: 100%;
   height: 4415px;
   left: 2445px;
   top: -2311px;
-  background: #191765 url(./Ellipse\ 18.svg) no-repeat 0% 2%;
+  background: #02021a url(./Ellipse\ 18.svg) no-repeat 0% 2%;
   background-image:
     url(/images/Ellipse\ 18.svg),
     url(/images/Ellipse\ 19.svg),
@@ -114,8 +115,8 @@ hr {
 }
 
 .desc {
-  height: 170px;
-  width: 327px;
+  width: 100%;
+  padding: 0 20px;
   color: #c8c8d4;
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -194,12 +195,19 @@ hr {
   line-height: 16px;
 }
 
+.main-section img {
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+}
+
 .container1 {
+  width: 80%;
   display: flex;
-  width: 98%;
   flex-flow: wrap;
-  justify-content: center;
   margin: 0 0% 0 2%;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .items {
@@ -256,7 +264,7 @@ hr {
   display: flex;
   align-items: center;
   color: #9490ff;
-  margin: 80px 8% 40px 8%;
+  margin: 40px 0 30px 0;
 }
 
 .cd11 {
@@ -265,6 +273,11 @@ hr {
   background:
     linear-gradient(0deg, #f9f9f9, #f9f9f9),
     url("image_processing20200716-21735-f07s4k.png");
+}
+
+.cd11 img {
+  width: 100%;
+  height: 100%;
 }
 
 .cd12 {
@@ -660,12 +673,13 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  .container1,
+  
   .main-section,
   hr,
   .desc {
-    width: 448px;
+    width: 80%;
     margin-top: 50px;
+    padding: auto;
   }
 
   .main-section {

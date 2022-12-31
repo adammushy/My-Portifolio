@@ -27,59 +27,72 @@ navLinks.forEach((element) => {
 const cards = [
   {
     id: 1,
-    heading: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    description2: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it 1960s `,
-    languages: ['css', 'HTML', 'Bootstrap', 'Ruby'],
-    languages2: ['css', 'HTML', 'Ruby on Rails', 'Github'],
+    heading: 'National Innovation Fair Ad',
+    description: `National Innovation Initiative Fair website is a website I built just for fun and practice, 
+                  its a website showcasing a program that takes place in Zambia every year, 
+                  where innovators come from all corners of the country to solve the challenges faced by the society.`,
+    description2: `National Innovation Initiative Fair website is a website I built just for fun and practice, 
+    its a website showcasing a program that takes place in Zambia every year, 
+    where innovators come from all corners of the country to solve the challenges faced by the society `,
+    languages: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+    languages2: ['CSS', 'HTML', 'Ruby on Rails', 'Github'],
 
-    image: './popup.png',
+    image: './NIIScreenShot.png',
+    link: 'https://ice949.github.io/National-Innovation-Fair/',
     seelive: 'See live',
     seesource: 'See source',
     button: 'See project',
   },
   {
     id: 2,
-    heading: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    description2: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it 1960s `,
-    languages: ['css', 'HTML', 'Bootstrap', 'Ruby'],
-    languages2: ['css', 'HTML', 'Ruby on Rails', 'Github'],
+    heading: 'Nicetyfarm Technologies',
+    description: `Nicetyfarm Technologies website is a website for my Company. 
+                  A landing page for an Agritech company that is redefining Sustainable Agriculture 
+                  through Precesion farming(Data-Driven Farming).`,
+    description2: `Nicetyfarm Technologies website is a website for my Company. 
+                  A landing page for an Agritech company that is redefining Sustainable Agriculture 
+                  through Precesion farming(Data-Driven Farming). `,
+    languages: ['CSS', 'JavaScript', 'Bootstrap', 'Ruby'],
+    languages2: ['CSS', 'JavaScript', 'Ruby on Rails', 'Github'],
 
     button: 'See project',
-    image: './popup.png',
+    image: './NicetyfarmScreenShot.png',
+    link: 'https://www.nicetyfarm.com/',
     seelive: 'See live',
     seesource: 'See source',
   },
   {
     id: 3,
-    heading: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    description2: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+    heading: 'SouthSide Music',
+    description: `Southside Music is a music blog for Southern province 
+                  Zambia music built just for fun using JavaScript, 
+                  HTML and CSS. You can Upload a song to it, 
+                  Listen to a song as we as download a song from it`,
+    description2: `Southside Music is a music blog for Southern province 
+                  Zambia music built just for fun using JavaScript, 
+                  HTML and CSS. You can Upload a song to it, 
+                  Listen to a song as we as download a song from it,
         `,
-    languages: ['css', 'HTML', 'Bootstrap', 'Ruby'],
-    languages2: ['css', 'HTML', 'Ruby on Rails', 'Github'],
+    languages: ['css', 'JavaScript', 'Bootstrap', 'Ruby'],
+    languages2: ['css', 'JavaScript', 'Ruby on Rails', 'Github'],
 
-    image: './popup.png',
-
+    image: './SouthsideScreenShot.png',
+    link: 'https://www.southlifemusic.site/',
     button: 'See project',
     seelive: 'See live',
     seesource: 'See source',
   },
   {
     id: 4,
-    heading: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-    description2: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,.`,
-    languages: ['css', 'HTML', 'Bootstrap', 'Ruby'],
-    languages2: ['css', 'HTML', 'Ruby on Rails', 'Github'],
-    image: './popup.png',
+    heading: 'Kat & Ice Movies',
+    description: `web application based on an external API that displays Movies from 
+                  a movie API and gets likes and comments for a movie then retrives it and displays them.`,
+    description2: `web application based on an external API that displays Movies from 
+                  a movie API and gets likes and comments for a movie then retrives it and displays them.`,
+    languages: ['css', 'JavaScript', 'Bootstrap', 'Ruby'],
+    languages2: ['css', 'JavaScript', 'Ruby on Rails', 'Github'],
+    image: './KatandiceScreenShot.png',
+    link: 'https://timely-pie-1973e1.netlify.app/',
     button: 'See project',
     seelive: 'See live',
     seesource: 'See source',
@@ -90,7 +103,7 @@ const projecCards = cards
   .map(
     (card) => `
     <div class="work${card.id}">
-    <div class="cd11"></div>
+    <div class="cd11"><img src="${card.image}" alt="popup-img"></div>
     <div class="cont">
         <h3 class="cd12">${card.heading}</h3>
         <p class="cd13">
@@ -129,7 +142,7 @@ const popUp = (card) => {
     ${card.languages2.map((lang) => `<li>${lang}</li>`).join('')}
     </ul>
     <div class="p-btn">
-    <button>${card.seelive} <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+    <a href=${card.link}><button>${card.seelive} <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
     <button>${card.seesource} <i class="fa-brands fa-github"></i></button>
     </div>
       `;
@@ -169,6 +182,7 @@ function validateName() {
     return false;
   }
   nameError.innerHTML = '';
+  
   return true;
 }
 
